@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallRotation2 : MonoBehaviour
 {
-    public Vector3 targetPosition;
+    public GameObject sphere;
     
     void Start()
     {
@@ -12,6 +12,6 @@ public class BallRotation2 : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(targetPosition);
+        transform.LookAt(sphere.transform);
     }
 }
